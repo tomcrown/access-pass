@@ -5,7 +5,7 @@ import { decodeSuiPrivateKey } from '@mysten/sui.js/cryptography';
 
 const client = new SuiClient ({ url: getFullnodeUrl('testnet') });
 
-const { secretKey } = decodeSuiPrivateKey('suiprivkey1qza8ay8cts039ecz6nlsjfkmw5xyejmwtdtlhgs0sjp3ysteqc0zs306jze');
+const { secretKey } = decodeSuiPrivateKey('secretKey');
 const keyPair = Ed25519Keypair.fromSecretKey(secretKey);
 
 const PACKAGE_ID = '0xd19a580f34548c2873b721853142d820e4a1a1ab4c01b219f244f7485527dd1d';
