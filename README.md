@@ -15,6 +15,18 @@ This Sui Move smart contract mints an access pass NFT with a label like "VIP" or
 - Testnet deployment
 
 
+## 📂 Modules
+### `AccessPass`
+```move
+struct AccessPass {
+  id: UID,
+  owner: address,
+  label: String
+}
+mint_pass(label: String)
+
+unlock_secret(pass: &AccessPass)
+
 🧪 Tests
 Mint and unlock by owner ✅
 
